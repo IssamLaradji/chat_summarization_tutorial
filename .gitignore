@@ -137,6 +137,5 @@ results
 
 *.pkl
 *.yml
-*.json
 
 wandb
