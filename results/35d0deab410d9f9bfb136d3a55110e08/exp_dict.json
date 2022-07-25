@@ -1,0 +1,5 @@
+{
+    "dataset": "syn",
+    "lr": 1,
+    "model": "linear"
+}
