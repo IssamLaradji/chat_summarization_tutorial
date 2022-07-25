@@ -28,7 +28,7 @@ def trainval(exp_dict, savedir, args):
     # Get Tokenizer and Model
     model_checkpoint = exp_dict["model"]
     tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
-    model = AutoModelForSeq2SeqLM.from_pretrained(model_checkpoint).cuda()
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_checkpoint).to(DEVICE)
     optim = AdamW(model.parameters(), lr=exp_dict["lr"])
 
     # Tokenize dataset

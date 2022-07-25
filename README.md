@@ -6,6 +6,12 @@ This dataset is based on [TweetSumm](https://arxiv.org/abs/2111.11894) and the m
 
 ![](data/figures/overview.png)
 
+
+# Pre-requisites
+
+- Experience in Python and general machine learning 
+- A machine with at least 8 GB RAM (A GPU is recommended but not required)
+
 # QuickStart
 
 The 4 steps below will allow us to get the libraries we need for running the code, to train and validate large language models and save their results, and to visualize all saved results on a jupyter notebook.
