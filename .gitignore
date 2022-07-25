@@ -134,7 +134,6 @@ dmypy.json
 logs
 wandb
 results
-figures
 
 # data files
 *.pkl
