@@ -135,7 +135,6 @@ logs
 wandb
 results
 
-# data files
 *.pkl
 *.yml
 *.json
