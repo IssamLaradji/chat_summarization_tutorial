@@ -4,7 +4,7 @@ We will build a chat summarization pipeline using a seq2seq large language model
 
 This dataset is based on [TweetSumm](https://arxiv.org/abs/2111.11894) and the model on [HuggingFace](https://huggingface.co/docs/transformers/model_doc/distilbert). The figure below presents an overview.
 
-![](figures/overview.png)
+![](data/figures/overview.png)
 
 # QuickStart
 
