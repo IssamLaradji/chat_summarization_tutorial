@@ -23,11 +23,18 @@ git clone https://github.com/IssamLaradji/chat_summarization_tutorial
 ```
 
 ### 1. Install Requirements
+
+The following command install the libraries required to run this code.
+
 ```
 pip install -r requirements.txt
 ```
 
 ### 2. Train and Validate
+
+
+The following command runs and validates two large language models on the tweetsumm dataset and saves the scores in th `results` folder.
+
 
 ```
 python trainval.py
@@ -35,8 +42,9 @@ python trainval.py
 
 ### 3. Visualize the results
 
-Open the generated `results.ipynb` file and run the first cell to get the following dashboard of plots.
+Open the generated `results.ipynb` file and run the first cell to get the following dashboard of plots. They show that distillbart works a lot better than T5 at summarizing dialogues.
 
+<img src='data/figures/results.png' width='700'>
 
 # Assignment
 
@@ -45,3 +53,10 @@ Run experiments using other huggingface models like Pegasus (known as `google/pe
 Modify `exp_list` in `trainval.py` under the comment `TODO: Add more models here`, and the run the code, and visualize the results and post them on the `Github Issues` section. 
 
 It would be interesting to see if Pegasus outperforms T5 and BART.
+
+
+# Contact me
+
+I am Issam Laradji a Research Scientist as ServiceNow Research and I am currently working on tasks related to natural language processing (NLP) specifically dialogue systems and chat bots.
+
+If you would like to chat or collaborate, you can reach me at [twitter](https://twitter.com/ILaradji) or [LinkedIn](https://www.linkedin.com/in/issam-laradji-67ba1a99/).

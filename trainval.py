@@ -131,7 +131,7 @@ def val_on_loader(model, tokenizer, val_loader):
     Validates the model on the dataset and returns the metric scores
     """
     metric = load_metric("rouge")
-    
+
     model.eval()
     for batch in tqdm.tqdm(val_loader, desc="validating"):
         # get Input
@@ -174,7 +174,9 @@ if __name__ == "__main__":
         "sshleifer/distilbart-cnn-6-6",
         "TheLongSentance/t5-small-finetuned-xsum",
     ]:
-        exp_list += [{"model": model, "batch_size": 16, "lr": 5e-5}]
+        exp_list += [
+            {"dataset": "tweetsumm", "model": model, "batch_size": 16, "lr": 5e-5}
+        ]
 
     # Run experiments and create results file
     hw.run_wizard(
